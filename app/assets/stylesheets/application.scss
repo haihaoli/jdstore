@@ -17,3 +17,24 @@
 @import "bootstrap";
 @import "bootstrap-sprockets";
 @import "font-awesome";
+
+
+/* 搜索功能 */
+
+#search-id{
+  margin-left: 7px;
+  width: 200px;
+  padding-top: 7px;
+}
+
+.search-info-title{
+  font-family: PingFangSC-Medium, Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.job-table {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* 搜索功能 */

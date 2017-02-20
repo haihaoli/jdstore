@@ -41,11 +41,15 @@ gem 'devise'
 gem 'simple_form'
 gem 'font-awesome-rails'
 gem 'carrierwave'
-gem 'mini_magick'
+gem 'ransack'
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
+gem 'seo_helper'
 gem 'letter_opener', group: :development
 gem 'aasm'
 gem 'figaro'
 gem 'fog'
+gem 'mini_magick'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
