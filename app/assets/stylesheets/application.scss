@@ -18,6 +18,25 @@
 @import "bootstrap-sprockets";
 @import "font-awesome";
 
+//新增
+@import "bootstrap.min";
+@import "core";
+@import "custom";
+@import "font-awesome.min";
+@import "responsive";
+@import "plugins/animate";
+@import "plugins/jquery-ui.min";
+@import "plugins/magnific-popup";
+@import "plugins/meanmenu.min";
+@import "plugins/nivo-slider";
+@import "plugins/owl.carousel";
+@import "plugins/slick";
+@import "plugins/venobox";
+@import "plugins/default";
+@import "plugins/footer";
+@import "plugins/header";
+@import "plugins/shortcodes";
+@import "plugins/slider";
 
 /* 搜索功能 */
 

@@ -16,6 +16,13 @@
 //= require bootstrap
 //= require_tree .
 
+//新增
+//= require bootstrap.min
+//= require main
+//= require plugins
+//= require vendor/jquery-1.12.4.min
+//= require vendor/modernizr-2.8.3.min
+
 
 
 $(document).ready(function () {
