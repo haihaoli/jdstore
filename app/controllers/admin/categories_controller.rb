@@ -1,8 +1,4 @@
-class Admin::CategoriesController < ApplicationController
-  layout "admin"
-
-  before_action :authenticate_user!
-  before_action :admin_required
+class Admin::CategoriesController < AdminController
 
   def new
     @category = Category.new

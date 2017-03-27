@@ -1,21 +1,15 @@
-class ProductImagesController < ApplicationController
-  before_action :authenticate_user!
-  before_action :admin_required
-
-  layout "admin"
+class ProductImagesController < AdminController
+  before_action :find_product, only: [:index, :new, :create, :edit, :update]
 
   def index
-    @product = Product.find(params[:product_id])
     @product_image = ProductImage.all
   end
 
   def new
-    @product = Product.find(params[:product_id])
     @product_image = ProductImage.new
   end
 
   def create
-    @product = Product.find(params[:product_id])
     @product_image = ProductImage.new(product_image_params)
     @product_image.product = @product
     if @product_image.save
@@ -29,7 +23,6 @@ class ProductImagesController < ApplicationController
   end
 
   def edit
-    @product = Product.find(params[:product_id])
     @product_image = ProductImage.find(params[:id])
   end
 
@@ -39,7 +32,6 @@ class ProductImagesController < ApplicationController
         @product.product_images.destroy_all #need to destroy old pics first
     end
 
-    @product = Product.find(params[:product_id])
     @product_image = ProductImage.find(params[:id])
     @product_image.product = @product
 
@@ -56,6 +48,10 @@ class ProductImagesController < ApplicationController
 
   def product_image_params
     params.require(:product_image).permit(:big_image, :product_id)
+  end
+
+  def find_product
+    @product = Product.find(params[:product_id])
   end
 
 end
